@@ -10,22 +10,13 @@ def allOddDigit(n):
         
         if int(digit)%2!=0:
             answer+=digit
-        #print(answer)
         
         if int(digit)%2==0 and digit!='0':
             answer+=str(int(digit)-1)
             b=index+1
-            #print(b)
-            break
-        
-        elif digit=='0' and int(answer)%2==0:
-            answer=str(int(answer)-1)
-            print(answer)
-            b=index
-            print(b)
             break
     
-        elif digit=='0' and int(answer)%2!=0:
+        if digit=='0':
             answer=str(int(answer)-2)
             int(answer)
             b=index
